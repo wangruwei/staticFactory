@@ -1,0 +1,7 @@
+@charset "UTF-8";
+$lte7: true;
+$designWidth: 750;
+$img: 'http://17zy-17xue.oss-cn-beijing.aliyuncs.com/pro/studysituation/';
+@function px2rem( $px ){
+	@return $px*320/$designWidth/20 + rem;
+}

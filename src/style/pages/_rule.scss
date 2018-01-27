@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.rule {
+	.rule_top_bg {
+		height: px2rem(180);
+		@include bg('rule_bg.png', 100%, 100%);
+		margin-bottom: px2rem(44);
+	}
+	dl {
+		padding-left: px2rem(40);
+		padding-right: px2rem(40);
+		margin-bottom: px2rem(60);
+		max-height: 9999px;
+	}
+	dt {
+		color: #7545f1;
+		font-size: px2rem(30);
+		line-height: px2rem(30);
+		margin-bottom: px2rem(12);
+	}
+	dd {
+		font-size: px2rem(26);
+		line-height: px2rem(48);
+		color: #b0673f;
+		display: flex;
+		.list_tit {
+			font-size: px2rem(26);
+			line-height: px2rem(48);
+			flex: 0 0 1em;
+			font-weight: normal;
+		}
+		.list_para {
+			flex: 1;
+		}
+	}
+}

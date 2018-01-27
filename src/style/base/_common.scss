@@ -1,0 +1,29 @@
+﻿@charset "UTF-8";
+//通用样式
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: auto;
+	min-height: 100%;
+	_height: 100%;
+	overflow-x: visible;
+	background: #f4f4f4;
+}
+.xue_section {
+	margin-bottom: px2rem(20);
+	background: #fff;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+
+
+

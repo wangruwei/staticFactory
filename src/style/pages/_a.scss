@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+	background: #ffe169;
+}
+
+.a {
+	.top {
+		height: px2rem(808);
+		background: linear-gradient(top, #773bff, #6725ec);
+		position: relative;
+		left: 0;
+		top: 0;
+		.top_top {
+			height: px2rem(648);
+			width: 100%;
+			@include bg('a/a_top_top_bg.png', 100%, 100%);
+		}
+		.top_bot {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: px2rem(418);
+			@include bg('a/a_top_bot_bg.png', 100%, 100%);
+			text-align: center;
+			.rule_link {
+				font-size: px2rem(26);
+				color: #fffe81;
+				line-height: px2rem(26);
+				display: inline-block;
+				text-decoration: underline;
+				position: relative;
+				left: 0;
+				top: 0;
+				margin-top: px2rem(338);
+				padding-right: px2rem(25);
+				&:after {
+					display: block;
+					content: '';
+					width: px2rem(10);
+					height: px2rem(18);
+					@include bg('a/a_link_arrow.png', 100%, 100%);
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: px2rem(-9);
+				}
+			}
+		}
+	}
+
+	.middle {
+		padding-top: px2rem(23);
+		.invite_box {
+			display: flex;
+			height: px2rem(135);
+			margin-left: px2rem(90);
+			.avatar_wrapper {
+				flex: 0 0 px2rem(90);
+				height: px2rem(90);
+				position: relative;
+				left: 0;
+				top: 0;
+				.img {
+					display: block;
+					border: px2rem(2) solid #fff;
+					border-radius: 50%;
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+				}
+				&:after {
+					content: '';
+					width: px2rem(36);
+					height: px2rem(36);
+					display: block;
+					position: absolute;
+					right: px2rem(3);
+					bottom: px2rem(-4);
+					@include bg('a/a_avatar_select.png', 100%, 100%);
+				}
+			}
+			.desc {
+				flex: 1;
+				padding-left: px2rem(22);
+				color: #f6541c;
+				font-size: px2rem(28);
+				line-height: px2rem(44);
+			}
+		}
+		.btn {
+			width: px2rem(560);
+			height: px2rem(96);
+			background: #8348f8;
+			color: #efebe2;
+			font-size: px2rem(42);
+			line-height: px2rem(96);
+			border-radius: px2rem(48);
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.bottom {
+		text-align: center;
+		.tip_box {
+			color: #c99037;
+			font-size: px2rem(22);
+			line-height: px2rem(36);
+			padding-top: px2rem(22);
+			padding-bottom: px2rem(50);
+			margin: 0 auto;
+			display: inline-block;
+			text-align: left;
+		}
+	}
+}
